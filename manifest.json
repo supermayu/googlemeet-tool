@@ -1,0 +1,22 @@
+{
+  "name": "Google Meet ツール",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Google Meet ツールは、Google Meetの会議をより便利にするための拡張機能です。",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
